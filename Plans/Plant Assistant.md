@@ -6,7 +6,7 @@
 ## Steps:
 - User Plugs <x> into a plant
 - User Inputs Type/Species of plants
-- User Inputs A photo of the plant's Affected leaves [Difficult] 
+- User Inputs A photo of the plant's Affected leaves [Difficult] (Ultralytics - YOLOv11 - Custom Trained)
 - We Fetch Info:
   - Optimal Temps
   - Optimal Humidity
