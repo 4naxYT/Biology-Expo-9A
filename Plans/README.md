@@ -1186,7 +1186,7 @@ compressed into minutes of wall-clock time. That is the point.
 > Note From me, the dev - `PB ( 9A )` :  
 >   
 > most of this readme and the `Css` was `"made"` using Generative Artifitial Inteligence.  
-> The syntax checking and optimisations to performance was also added via generating ai's `"help"`  
+> The syntax checking and optimisations to performance was also added via generative ai's `"help"`  
 > There is no specific model used to do each task, and there is a very small chance that some information coded was wrong, ie.  
 > Slightly buggy `Css` for cards in the dashboard needed manual tweaking with the `Css`.
 > I had a lot of fun making, and modifying this project. the longer this simulation runs, the faster and better our specimins get...   
