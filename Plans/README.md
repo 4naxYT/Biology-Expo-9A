@@ -59,9 +59,9 @@ local; no network traffic leaves your machine.
 
 ## What you're looking at
 
-The **Visualiser** is the arena. Coloured dots are individual specimens; the
-hue of each dot encodes its heritable colour gene, which acts as a proxy for
-species identity. Food is green, poison is magenta, rogues are white, and the
+The **Visualiser** is the arena. Coloured Arrows are individual specimens; the
+hue of each Arrow encodes its heritable colour gene, which acts as a proxy for
+species identity. Food is a green Dot, poison is a magenta Dot, rogues are white, and the
 background darkens through the day/night cycle. Right-click to attract every
 creature toward a point. Left-click to drop resources. Click a creature to
 inspect its brain.
@@ -83,7 +83,7 @@ The **Dashboard** has three tabs:
 
 ## The simulation model
 
-Bio-Expo-9A advances in discrete ticks. At 60 Hz (`target_tick_hz`), each tick
+This project advances in discrete ticks. At 60 Hz (`target_tick_hz`), each tick
 does the following, in order:
 
 1. **Item decay.** Every active food or poison item ages; once it exceeds
@@ -198,7 +198,7 @@ section is about how.
 
 ## Evolution and inheritance
 
-Bio-Expo-9A uses **neuroevolution**, not gradient descent. There is no
+This project uses **neuroevolution**, not gradient descent. There is no
 backprop, no labelled training set, no loss function in the machine-learning
 sense. Instead, the population's fitness is measured by the world and the
 best genomes are kept, mutated, and re-seeded.
@@ -261,7 +261,7 @@ Creatures of any relationship can, on contact, with probability
 `hgt_chance` per tick, exchange a single random weight index. This is not
 inheritance — it's **horizontal gene transfer**, the mechanism by which
 bacteria share antibiotic resistance genes across species boundaries. In
-Bio-Expo-9A it lets a successful weight "leak" across a population even
+this project it lets a successful weight "leak" across a population even
 between creatures that cannot sexually reproduce with each other, which is
 exactly what happens in real bacterial populations.
 
@@ -350,7 +350,7 @@ average phenotype shifts toward efficiency.
 
 ## Relation to real biology
 
-Bio-Expo-9A is not a biological model. It is a **toy model** that abstracts
+This project is not a biological model. It is a **toy model** that abstracts
 real biology down to a tractable computational core, but the abstractions
 are chosen to preserve the mechanisms that Darwin identified as necessary
 for natural selection to operate.
@@ -394,7 +394,7 @@ Notable simplifications:
 - **No ageing.** Creatures die from starvation, combat, or poisoning — never
   from old age. Lifespan is a fitness weight, not a fixed maximum.
 - **No niches.** Every creature lives in the same 800×800 arena with the same
-  resource distribution. Real ecology is spatially structured; Bio-Expo-9A
+  resource distribution. Real ecology is spatially structured; this project
   is not.
 
 These are intentional design choices. They make the simulation fast enough
@@ -406,7 +406,7 @@ from "gene" to "selection" short enough for a human being to follow.
 ## How this demonstrates Darwin's theory
 
 Darwin's *On the Origin of Species* can be reduced to four postulates, plus
-a conclusion. Bio-Expo-9A implements all four explicitly and lets you watch
+a conclusion. This project implements all four explicitly and lets you watch
 the conclusion fall out.
 
 ### 1. Variation
@@ -476,7 +476,7 @@ the population is *adapted* to its environment — not because anything
 intended it, but because selection has no other possible outcome when the
 four postulates above hold.
 
-This is the central insight of Darwin's work, and Bio-Expo-9A is an
+This is the central insight of Darwin's work, and this project is an
 interactive demonstration of it. Running the simulation for a few thousand
 generations is the digital equivalent of watching a Galápagos finch's beak
 change shape in response to a new seed type — but at a timescale of minutes
@@ -484,7 +484,7 @@ rather than millions of years.
 
 ### Secondary evolutionary phenomena that emerge
 
-Beyond the four postulates, Bio-Expo-9A produces several well-known
+Beyond the four postulates, this project produces several well-known
 evolutionary dynamics as emergent side effects:
 
 - **Red Queen dynamics.** As rogues evolve better hunting, non-rogues evolve
@@ -563,7 +563,7 @@ It is not built or run. It is preserved for reference only.
 ## Directory layout
 
 ```text
-Bio-Expo-9A/
+This Project/
 ├── Run.bat                     launcher
 ├── Install Deps.bat            one-time setup
 ├── Main.py                     entry point
@@ -820,7 +820,7 @@ rest of the code will read much more easily.
 ### Imports across folders (packages)
 
 A Python folder containing an `__init__.py` file is called a **package**. The
-subfolders of Bio-Expo-9A (`Core/`, `Simulation/`, `Brains/`) are all
+subfolders of this project (`Core/`, `Simulation/`, `Brains/`) are all
 packages. When you write:
 
 ```python
