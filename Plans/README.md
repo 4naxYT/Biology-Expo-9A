@@ -1,5 +1,17 @@
 <!-- Project documentation updated with AI assistance. -->
-# Bio-Expo-9A
+# Biology Expo - 9A
+
+![Python](https://img.shields.io/badge/python-3.7%2B-blue?style=flat&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat&logo=windows&logoColor=white)
+![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)
+
+### Deps:
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![aiohttp](https://img.shields.io/badge/aiohttp-2C5BB4?style=flat&logo=aiohttp&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-013243?style=flat&logo=numpy&logoColor=white)
+![pywebview](https://img.shields.io/badge/pywebview-4B8BBE?style=flat&logo=python&logoColor=white)
+
+## Description -
 
 > A portable, self-contained artificial-life simulation in which digital
 > organisms evolve under selection pressure inside a silicon petri dish.
